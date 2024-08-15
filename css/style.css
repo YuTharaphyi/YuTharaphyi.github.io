@@ -241,5 +241,56 @@ body {
     margin-top: 100px;
 }
 
+.marquee {
+    overflow-x: clip;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.marquee-inner {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 12vh 0;
+    will-change: transform;
+}
+
+.marquee-inner img {
+    height: 100%;
+    transition: transform 0.5s;
+    flex-shrink: 0;
+    width: 40vw;
+}
+
+.marquee-inner img:hover {
+    transform: scale(1.03);
+}
+
+.illustration-button-container {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.more-illustration-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #ECD4E1;
+    background-color: transparent;
+    border: 2px solid #ECD4E1;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+    height: 50px;
+    line-height: 1.5;
+}
+
+.more-illustration-button:hover {
+    background-color: transparent;
+    color: #eeb5d3;
+}
 
 /* ----about end----- */
