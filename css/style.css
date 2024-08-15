@@ -1,0 +1,224 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif
+}
+
+:root {
+    --cream: #FCFAED;
+    --lemon: #7E844A;
+    --tan: #b7a26e;
+    --old-lace: #fff8e7
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.anybody {
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0
+}
+
+body {
+    color: #333;
+    background-color: var(--cream);
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.pageloader-home {
+    z-index: 99999999;
+    background-color: var(--cream);
+    cursor: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    inset: 0%
+}
+
+
+/* ----navbar----- */
+
+.navbar {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    z-index: 10;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 50px;
+    font-size: 36px;
+    font-family: "Anybody";
+    color: #9DC2CC;
+}
+
+
+.Yu_logo {
+    width: 28px;
+    height: auto;
+}
+
+/* ----navbar end----- */
+
+
+/* ----intro----- */
+.intro {
+    margin-top: 100px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-image: url(/images/introbg.svg);
+    width: 100%;
+    height: 100vh;
+}
+
+#lottie-animation {
+    width: 100%;
+    height: 400px;
+}
+
+/* ----intro end----- */
+
+
+/* ----project----- */
+
+.projecttitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 80px;
+    color: #9DC2CC;
+    font-family: "Anybody";
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.project-text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.project-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-projects-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #ECD4E1;
+    background-color: transparent;
+    border: 2px solid #ECD4E1;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 150px;
+    height: 50px;
+    line-height: 1.5;
+}
+
+.more-projects-button:hover {
+    background-color: transparent;
+    color: #eeb5d3;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ----project end----- */
+
+
+/* ----about----- */
+#about {
+    margin-top: 100px;
+}
+
+.phyipic {
+    width: 100%;
+    height: auto;
+}
+
+.abouttext {
+    font-size: 40px;
+    font-family: "Anybody";
+    font-weight: 700;
+    line-height: 41.4px;
+    margin-top: 50px;
+    color: #9DC2CC;
+}
+
+
+/* ----about end----- */
+
+/* ----about----- */
+#illustrations {
+    margin-top: 100px;
+}
+
+
+/* ----about end----- */
