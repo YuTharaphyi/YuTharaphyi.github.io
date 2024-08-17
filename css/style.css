@@ -7,7 +7,7 @@ html {
 :root {
     --cream: #FCFAED;
     --lemon: #7E844A;
-    --tan: #b7a26e;
+    --lightblue: #9DC2CC;
     --old-lace: #fff8e7
 }
 
@@ -65,12 +65,12 @@ body {
     margin: 0 50px;
     font-size: 36px;
     font-family: "Anybody";
-    color: #9DC2CC;
+    color: var(--lightblue);
 }
 
 .navbar-nav .nav-item .nav-link {
     font-family: "Anybody";
-    color: #9DC2CC;
+    color: var(--lightblue);
 }
 
 
@@ -123,7 +123,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-size: 80px;
-    color: #9DC2CC;
+    color: var(--lightblue);
     font-family: "Anybody";
     font-weight: 700;
 }
@@ -248,8 +248,26 @@ body {
     font-weight: 700;
     line-height: 41.4px;
     margin-top: 50px;
-    color: #9DC2CC;
+    color: var(--lightblue);
     text-align: justify;
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 40px;
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #007bff;
 }
 
 
