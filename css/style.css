@@ -62,7 +62,7 @@ body {
 }
 
 .navbar-nav .nav-item {
-    margin: 0 50px;
+    margin: 0 20px;
     font-size: 36px;
     font-family: "Anybody";
     color: var(--lightblue);
@@ -273,7 +273,7 @@ body {
 
 /* ----about end----- */
 
-/* ----about----- */
+/* ----illustrations----- */
 #illustrations {
     margin-top: 100px;
 }
@@ -330,4 +330,105 @@ body {
     color: #eeb5d3;
 }
 
-/* ----about end----- */
+/* ----illustrations end----- */
+
+
+
+/* ----Service start----- */
+
+.service-box {
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.transform-hover:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ----Service end----- */
+
+
+/* ----Contact start----- */
+
+
+#contact .card {
+    border-radius: 15px;
+}
+
+#contact .card-img-top {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+#contact .form-control {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #0BCEAF;
+    box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
+}
+
+#contact .btn-gradient {
+    background: linear-gradient(45deg, #0BCEAF, #05a69b);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#contact .btn-gradient:hover {
+    background: linear-gradient(45deg, #05a69b, #0BCEAF);
+    color: #fff;
+}
+
+#contact img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----Contact end----- */
+
+/* ----Footer Start----- */
+
+
+footer {
+    background-color: #343a40;
+}
+
+footer h4,
+footer h5 {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .text-muted {
+    color: #6c757d;
+}
+
+/* ----Footer end----- */
