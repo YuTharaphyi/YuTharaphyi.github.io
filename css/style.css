@@ -230,7 +230,7 @@ figure {
 .fh5co-cover .display-tc h3 {
   margin: 0;
   padding: 0;
-  color: #E8D1A7;
+  color: #442d1c;
 }
 
 #fh5co-header .display-tc h1,
@@ -261,7 +261,7 @@ figure {
   width: 30px;
   height: 4px;
   content: '';
-  background: #E8D1A7;
+  background: #442d1c;
   margin-left: -30px;
 }
 
@@ -273,7 +273,7 @@ figure {
   width: 30px;
   height: 4px;
   content: '';
-  background: #E8D1A7;
+  background: #442d1c;
   margin-right: -30px;
 }
 
@@ -324,8 +324,8 @@ figure {
 #fh5co-header .display-tc .profile-thumb,
 .fh5co-cover .display-tc .profile-thumb {
   background-size: cover !important;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: 25% 30% !important;
+  background-repeat: no-repeat !important;
   position: relative;
   height: 250px;
   width: 250px;
@@ -339,7 +339,7 @@ figure {
 
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
-  color: #E8D1A7;
+  color: #442d1c;
 }
 
 #fh5co-header .display-tc .fh5co-social-icons li a i,
@@ -928,7 +928,7 @@ figure {
 }
 
 #fh5co-project .work .desc {
-  background: #9D9167;
+  background: rgba(157, 145, 103, 0.7);
 }
 
 #fh5co-project .work .desc span {
@@ -939,7 +939,7 @@ figure {
   display: table-cell;
   vertical-align: middle;
   height: 400px;
-  background: #E8D1A7;
+  background: rgba(232, 209, 167, 0.7);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
