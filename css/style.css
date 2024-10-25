@@ -96,6 +96,78 @@ figure {
   background: #FF9000;
 }
 
+
+
+/* Basic styling for the sticky nav */
+#sticky-nav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  /* Adjust this value to position the nav */
+  transform: translateY(-50%);
+  z-index: 1000;
+  /* Ensures it's above other content */
+}
+
+#sticky-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sticky-nav li {
+  margin: 10px 0;
+  /* Space between icons */
+}
+
+#sticky-nav a {
+  display: block;
+  width: 40px;
+  /* Adjust size */
+  height: 40px;
+  /* Adjust size */
+  text-align: center;
+  color: #333;
+  /* Icon color */
+  transition: color 0.3s;
+}
+
+#sticky-nav a i {
+  transform: scale(1.8);
+  display: block;
+  height: 100px;
+}
+
+#sticky-nav a:hover {
+  color: #007BFF;
+  /* Change color on hover */
+}
+
+/* Tooltip styling */
+#sticky-nav li:hover::after {
+  content: attr(title);
+  position: absolute;
+  left: 50px;
+  /* Position to the right of the icon */
+  top: 40%;
+  transform: translateY(-50%);
+  background: #333;
+  /* Tooltip background color */
+  color: #fff;
+  /* Tooltip text color */
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  /* Prevent text wrap */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#sticky-nav li:hover::after {
+  opacity: 1;
+  /* Show tooltip on hover */
+}
+
 #fh5co-header,
 .fh5co-cover {
   background-color: transparent;
