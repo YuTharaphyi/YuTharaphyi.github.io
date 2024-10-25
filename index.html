@@ -59,51 +59,27 @@
 
 	<div id="page">
 		<div id="sticky-nav">
-			<ul>
+			<div id="sticky-toggle">
+				<i class="icon-menu"></i>
+			</div>
+			<ul id="sticky-menu">
 				<li title="Home">
-					<a href="#fh5co-header">
-						<i class="icon-home2"></i>
-					</a>
+					<a href="#fh5co-header"><i class="icon-home2"></i></a>
 				</li>
 				<li title="About Me">
-					<a href="#fh5co-about">
-						<i class="icon-profile"></i>
-					</a>
+					<a href="#fh5co-about"><i class="icon-profile"></i></a>
 				</li>
-				<li title="Resume">
-					<a href="#fh5co-resume">
-						<i class="icon-text-document"></i>
-					</a>
+				<li title="My Services">
+					<a href="#fh5co-features"><i class="icon-briefcase2"></i></a>
 				</li>
-				<li title="Services">
-					<a href="#fh5co-features">
-						<i class="icon-gears"></i>
-					</a>
+				<li title="My Skills">
+					<a href="#fh5co-skills"><i class="icon-trophy2"></i></a>
 				</li>
-				<li title="Skills">
-					<a href="#fh5co-skills">
-						<i class="icon-graduation-cap"></i>
-					</a>
-				</li>
-				<li title="Illustration">
-					<a href="#fh5co-work">
-						<i class="icon-paintbrush"></i>
-					</a>
-				</li>
-				<li title="Stickers Projects">
-					<a href="#fh5co-stickerproject">
-						<i class="icon-palette"></i>
-					</a>
-				</li>
-				<li title="Graphic Projects">
-					<a href="#fh5co-project">
-						<i class="icon-image2"></i>
-					</a>
+				<li title="My Illustration">
+					<a href="#fh5co-work"><i class="icon-image2"></i></a>
 				</li>
 				<li title="Contact Me">
-					<a href="#fh5co-consult">
-						<i class="icon-envelope"></i>
-					</a>
+					<a href="#fh5co-consult"><i class="icon-envelope2"></i></a>
 				</li>
 			</ul>
 		</div>
@@ -937,7 +913,11 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-
+	<script>
+		document.getElementById("sticky-toggle").addEventListener("click", function () {
+			document.getElementById("sticky-menu").classList.toggle("show-menu");
+		});
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

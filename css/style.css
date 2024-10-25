@@ -102,76 +102,91 @@ figure {
   background: #FF9000;
 }
 
-
-
-/* Basic styling for the sticky nav */
+/* Sticky nav container */
 #sticky-nav {
   position: fixed;
-  top: 50%;
+  top: 50px;
   left: 10px;
-  /* Adjust this value to position the nav */
-  transform: translateY(-50%);
   z-index: 1000;
-  /* Ensures it's above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-#sticky-nav ul {
+/* Toggle button styling */
+#sticky-toggle {
+  display: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Main menu styling */
+#sticky-menu {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-#sticky-nav li {
+#sticky-menu li {
   margin: 10px 0;
-  /* Space between icons */
 }
 
-#sticky-nav a {
+#sticky-menu a {
   display: block;
   width: 40px;
-  /* Adjust size */
   height: 40px;
-  /* Adjust size */
   text-align: center;
   color: #333;
-  /* Icon color */
   transition: color 0.3s;
 }
 
-#sticky-nav a i {
+#sticky-menu a i {
   transform: scale(1.8);
+  height: 50px;
   display: block;
-  height: 100px;
 }
 
-#sticky-nav a:hover {
+#sticky-menu a:hover {
   color: #007BFF;
-  /* Change color on hover */
 }
 
 /* Tooltip styling */
-#sticky-nav li:hover::after {
+#sticky-menu li:hover::after {
   content: attr(title);
   position: absolute;
   left: 50px;
-  /* Position to the right of the icon */
   top: 40%;
   transform: translateY(-50%);
   background: #333;
-  /* Tooltip background color */
   color: #fff;
-  /* Tooltip text color */
   padding: 5px;
   border-radius: 5px;
   white-space: nowrap;
-  /* Prevent text wrap */
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-#sticky-nav li:hover::after {
+#sticky-menu li:hover::after {
   opacity: 1;
-  /* Show tooltip on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #sticky-toggle {
+    display: block;
+  }
+
+  #sticky-menu {
+    display: none;
+  }
+
+  #sticky-menu.show-menu {
+    display: flex;
+  }
 }
 
 #fh5co-header,
@@ -408,8 +423,8 @@ figure {
 #fh5co-project,
 #fh5co-stickerproject,
 #fh5co-blog,
-#fh5co-pricing,
-#fh5co-contact {
+#fh5co-features,
+#fh5co-consult {
   padding: 7em 0;
   clear: both;
 }
@@ -424,9 +439,9 @@ figure {
   #fh5co-project,
   #fh5co-stickerproject,
   #fh5co-blog,
-  #fh5co-pricing,
-  #fh5co-contact {
-    padding: 3em 0;
+  #fh5co-features,
+  #fh5co-consult {
+    padding: 3em 2em;
   }
 }
 
