@@ -197,6 +197,7 @@ figure {
   position: relative;
   height: 600px;
   width: 100%;
+  background-position: center 100% !important;
 }
 
 #fh5co-header .overlay,
