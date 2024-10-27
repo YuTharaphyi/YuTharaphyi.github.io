@@ -603,7 +603,7 @@ figure {
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #9D9167;
+  background-color: #E8D1A7;
   left: 50%;
   margin-left: 0px;
 }
@@ -633,7 +633,8 @@ figure {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  background-color: #9D9167;
+  background-color: #442d1c;
+  color: #E8D1A7;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -710,7 +711,7 @@ figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #9D9167;
+  background-color: #442d1c;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -775,12 +776,13 @@ figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #9D9167;
+  color: #E8D1A7;
 }
 
 .timeline-body>p,
 .timeline-body>ul {
   margin-bottom: 0;
+  color: #442d1c;
 }
 
 .timeline-body>p+p {
@@ -1042,7 +1044,7 @@ figure {
   height: 54px;
   border: none !important;
   background: #E8D1A7;
-  color: #9D9167;
+  color: #442d1c;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
