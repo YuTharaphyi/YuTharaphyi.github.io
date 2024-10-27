@@ -497,6 +497,10 @@ figure {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.info li .second-block a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .fh5co-social-icons {
   margin: 0;
   padding: 0;
