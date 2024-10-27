@@ -936,6 +936,14 @@ figure {
   color: #E8D1A7;
 }
 
+#fh5co-stickerproject .work .desc {
+  background: rgba(157, 145, 103, 0.7);
+}
+
+#fh5co-stickerproject .work .desc span {
+  color: #E8D1A7;
+}
+
 .work .desc {
   display: table-cell;
   vertical-align: middle;
